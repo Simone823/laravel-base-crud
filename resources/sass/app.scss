@@ -12,6 +12,11 @@ a {
     color: currentColor;
 }
 
+ul,
+ol {
+    list-style: none;
+}
+
 main {
     padding: 30px 8px;
 }
