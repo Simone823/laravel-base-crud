@@ -1,0 +1,111 @@
+header {
+  padding: 30px 20px;
+}
+
+header .menu_link {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+}
+
+header .menu_link li a {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+header .menu_link li a:hover {
+  text-decoration: underline;
+}
+
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+table tr {
+  text-align: center;
+}
+
+table tr th {
+  background-color: #d84b20;
+  padding: 15px 20px;
+  color: white;
+  font-size: 20px;
+  border: 2px solid black;
+}
+
+table tr td {
+  background-color: #007fff;
+  padding: 15px 20px;
+  font-size: 18px;
+  color: white;
+  border: 2px solid black;
+}
+
+table tr td img {
+  width: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  aspect-ratio: 1/1;
+  display: block;
+}
+
+table tr td a {
+  color: white;
+  font-weight: 700;
+}
+
+table tr td a:hover {
+  color: black;
+  transition: color 250ms linear;
+}
+
+form {
+  margin: 0 auto;
+  text-align: center;
+}
+
+form input {
+  padding: 5px 10px;
+  margin-bottom: 25px;
+}
+
+form input:last-child {
+  margin-bottom: 0;
+}
+
+form label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+form button {
+  display: block;
+  margin: 0 auto;
+  padding: 5px 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: currentColor;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+main {
+  padding: 30px 8px;
+}
+
