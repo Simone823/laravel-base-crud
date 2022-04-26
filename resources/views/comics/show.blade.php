@@ -1,5 +1,7 @@
 @extends('layouts.default')
 
+@section('headeTilte', $comic['title'])
+
 @section('mainContent')
 
     {{-- Table comic --}}
