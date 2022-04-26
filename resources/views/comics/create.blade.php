@@ -8,32 +8,32 @@
     <form action="" method="">
 
         {{-- Titile --}}
-        <label for="title" name="title">Titolo</label>
-        <input type="text" name="title">
+        <label for="title" id="title" name="title">Titolo</label>
+        <input type="text" id="title" name="title">
 
         {{-- Description --}}
-        <label for="description" name="description">Descrizione</label>
-        <input type="text" name="description">
+        <label for="description" id="description" name="description">Descrizione</label>
+        <input type="text"id="description"  name="description">
 
         {{-- Thumb --}}
-        <label for="thumb" name="thumb">Immagine</label>
-        <input type="text" name="thumb">
+        <label for="thumb" id="thumb" name="thumb">Immagine</label>
+        <input type="text" id="thumb" name="thumb">
         
         {{-- Price --}}
-        <label for="price" name="price">Prezzo</label>
-        <input type="text" name="price">
+        <label for="price" id="price" name="price">Prezzo</label>
+        <input type="text" id="price" name="price">
 
         {{-- Series --}}
-        <label for="series" name="series">Collezzione</label>
-        <input type="text" name="series">
+        <label for="series" id="series" name="series">Collezzione</label>
+        <input type="text" id="series" name="series">
 
         {{-- Sale date --}}
-        <label for="sale_date">Data di vendita</label>
-        <input type="text" name="sale_date">
+        <label for="sale_date" id="sale_date" name="sale_date">Data di vendita</label>
+        <input type="date" id="sale_date" name="sale_date">
 
         {{-- Type --}}
-        <label for="type" name="type">Tipologia</label>
-        <input type="text" name="type">
+        <label for="type" id="type" name="type">Tipologia</label>
+        <input type="text" id="type" name="type">
 
         {{-- Submit --}}
         <button type="submit">Aggiungi</button>
