@@ -11,11 +11,14 @@
     <title>@yield('headeTilte')</title>
 </head>
 <body>
+
+    {{-- Include header --}}
+    @include('components.header')
     
     {{-- Main --}}
     <main>
         @yield('mainContent')
     </main>
-    
+
 </body>
 </html>
