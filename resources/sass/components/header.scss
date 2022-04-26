@@ -1,0 +1,23 @@
+header {
+    padding: 30px 20px;
+
+    .menu_link {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 30px;
+
+        li {
+            a {
+                text-transform: uppercase;
+                font-weight: 700;
+                font-size: 18px;
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
