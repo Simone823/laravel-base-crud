@@ -1,6 +1,9 @@
 // import index scss
 @import '/resources/sass/comics/index.scss';
 
+// Import header scss
+@import '/resources/sass/components/header.scss';
+
 // Reset
 * {
     margin: 0;
