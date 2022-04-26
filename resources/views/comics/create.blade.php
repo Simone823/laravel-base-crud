@@ -24,7 +24,7 @@
         <input type="text" id="price" name="price">
 
         {{-- Series --}}
-        <label for="series" id="series" name="series">Collezzione</label>
+        <label for="series" id="series" name="series">Collezione</label>
         <input type="text" id="series" name="series">
 
         {{-- Sale date --}}
