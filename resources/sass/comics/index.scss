@@ -1,0 +1,37 @@
+
+// Table
+table {
+    max-width: 500px;
+    margin: 0 auto;
+    border-collapse: collapse;
+
+    tr {
+        text-align: center;
+
+        th {
+            background-color: #d84b20;
+            padding: 15px 20px;
+            color: white;
+            font-size: 20px;
+            border: 2px solid black;
+        }
+
+        td {
+            background-color: #007fff;
+            padding: 15px 20px;
+            font-size: 18px;
+            color: white;
+            border: 2px solid black;
+
+            a {
+                color: white;
+                font-weight: 700;
+
+                &:hover {
+                    color: black;
+                    transition: color 250ms linear;
+                }
+            }
+        }
+    }
+}
