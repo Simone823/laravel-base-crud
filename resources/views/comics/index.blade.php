@@ -10,6 +10,8 @@
         <tr>
             <th>id</th>
             <th>title</th>
+            <th>description</th>
+            <th>thumb</th>
             <th>price</th>
             <th>series</th>
             <th>sale_date</th>
@@ -24,6 +26,14 @@
 
                     <td>
                         {{$element['title']}}
+                    </td>
+
+                    <td>
+                        {{$element['description']}}
+                    </td>
+
+                    <td>
+                        <img src="{{$element['thumb']}}" alt="">
                     </td>
 
                     <td>

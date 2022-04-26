@@ -22,6 +22,14 @@ table {
             color: white;
             border: 2px solid black;
 
+            img {
+                width: 100px;
+                object-fit: cover;
+                object-position: top;
+                aspect-ratio: 1/1;
+                display: block;
+            }
+
             a {
                 color: white;
                 font-weight: 700;

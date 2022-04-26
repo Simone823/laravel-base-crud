@@ -11,6 +11,8 @@
         <tr>
             <th>id</th>
             <th>title</th>
+            <th>description</th>
+            <th>thumb</th>
             <th>price</th>
             <th>series</th>
             <th>sale_date</th>
@@ -24,6 +26,14 @@
 
             <td>
                 {{$comic['title']}}
+            </td>
+
+            <td>
+                {{$comic['description']}}
+            </td>
+
+            <td>
+                <img src="{{$comic['thumb']}}" alt="">
             </td>
 
             <td>
