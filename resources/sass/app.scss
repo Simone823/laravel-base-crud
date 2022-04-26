@@ -1,8 +1,12 @@
-// import index scss
-@import '/resources/sass/comics/index.scss';
 
 // Import header scss
 @import '/resources/sass/components/header.scss';
+
+// import comics index scss
+@import '/resources/sass/comics/index.scss';
+
+// Import comics create scss
+@import '/resources/sass/comics/create.scss';
 
 // Reset
 * {
