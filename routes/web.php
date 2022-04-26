@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 
 // Route homepage
 Route::get('/', function () {
-    return view('layouts.default');
+    return view('components.homepage');
 })->name('homepage');
 
 // Route comic controller
