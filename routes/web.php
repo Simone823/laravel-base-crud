@@ -14,8 +14,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+// Route homepage
+Route::get('/', function () {
+    return view('layouts.default');
+})->name('homepage');
 
+// Route comic controller
 Route::resource('comics', 'ComicController');
