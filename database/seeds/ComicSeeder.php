@@ -15,11 +15,10 @@ class ComicSeeder extends Seeder
         // Array comics config comics.php
         $comics = config('comics');
 
-        // Creo un nuovo comic
-        $comic = new Comic();
-
         // Ciclo for array comics per settare i valori dei campi del db
         foreach ($comics as $element) {
+            // Creo un nuovo comic
+            $comic = new Comic();
 
             $comic->title = $element['title'];
             $comic->description = $element['description'];
