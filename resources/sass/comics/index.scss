@@ -3,6 +3,10 @@
 table {
     margin: 0 auto;
     border-collapse: collapse;
+    
+    &:not(:last-child) {
+        margin-bottom: 35px;
+    }
 
     tr {
         text-align: center;
