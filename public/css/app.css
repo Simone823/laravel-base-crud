@@ -25,6 +25,10 @@ table {
   border-collapse: collapse;
 }
 
+table:not(:last-child) {
+  margin-bottom: 35px;
+}
+
 table tr {
   text-align: center;
 }
@@ -65,29 +69,101 @@ table tr td a:hover {
   transition: color 250ms linear;
 }
 
+table tr td button {
+  background-color: rgba(255, 36, 0, 0.65);
+  color: white;
+}
+
+table tr td button:hover {
+  background-color: #ff2400;
+}
+
 form {
   margin: 0 auto;
   text-align: center;
+  width: 100%;
+}
+
+form label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 18px;
+  color: #d84b20;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-shadow: 0 0 2px #d84b20;
 }
 
 form input {
-  padding: 5px 10px;
+  padding: 15px 15px;
   margin-bottom: 25px;
+  background-color: #007fff;
+  color: white;
+  border: none;
+  width: 400px;
 }
 
 form input:last-child {
   margin-bottom: 0;
 }
 
-form label {
-  display: block;
-  margin-bottom: 8px;
+form input::-moz-placeholder {
+  color: rgb(216, 216, 216);
+}
+
+form input:-ms-input-placeholder {
+  color: rgb(216, 216, 216);
+}
+
+form input::placeholder {
+  color: rgb(216, 216, 216);
+}
+
+form textarea {
+  resize: none;
+  padding: 10px 10px;
+  background-color: #007fff;
+  color: white;
+  border: none;
+  margin-bottom: 25px;
+  width: 400px;
+}
+
+form textarea::-moz-placeholder {
+  color: rgb(216, 216, 216);
+}
+
+form textarea:-ms-input-placeholder {
+  color: rgb(216, 216, 216);
+}
+
+form textarea::placeholder {
+  color: rgb(216, 216, 216);
+}
+
+form select {
+  padding: 10px 10px;
+  background-color: #007fff;
+  color: white;
+  margin-bottom: 25px;
+  border: none;
+  width: 400px;
 }
 
 form button {
   display: block;
   margin: 0 auto;
-  padding: 5px 10px;
+  padding: 10px 20px;
+  background-color: rgba(0, 196, 26, 0.65);
+  cursor: pointer;
+  font-weight: 600;
+  border: 2px solid transparent;
+}
+
+form button:hover {
+  background-color: #00c41a;
+  border: 2px solid black;
+  transition: all 250ms linear;
 }
 
 * {
