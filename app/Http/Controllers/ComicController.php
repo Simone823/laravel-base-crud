@@ -80,8 +80,7 @@ class ComicController extends Controller
     {
         $data = $request->all();
 
-        $comic->fill($data);
-        $comic->save();
+        $comic->update($data);
 
         return redirect()->route('comics.show', compact('comic'));
     }
