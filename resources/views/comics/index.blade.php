@@ -55,6 +55,10 @@
                     <td>
                         <a href="{{route('comics.show', $element['id'])}}">Visualizza</a>
                     </td>
+
+                    <td>
+                        <a href="{{route('comics.edit', $element['id'])}}">Modifica</a>
+                    </td>
                 </tr>
             @endforeach
 
