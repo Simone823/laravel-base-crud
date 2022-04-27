@@ -43,6 +43,15 @@ table {
                     transition: color 250ms linear;
                 }
             }
+
+            button {
+                background-color: rgba($color: #ff2400, $alpha: 0.65);
+                color: white;
+
+                &:hover {
+                    background-color: rgba($color: #ff2400, $alpha: 1);
+                }
+            }
         }
     }
 }
