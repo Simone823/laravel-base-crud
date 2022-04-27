@@ -1,24 +1,71 @@
 form {
     margin: 0 auto;
     text-align: center;
-
-    input{
-        padding: 5px 10px;
-        margin-bottom: 25px;
-        
-        &:last-child {
-            margin-bottom: 0;
-        }
-    }
+    width: 100%;
 
     label {
         display: block;
         margin-bottom: 8px;
+        font-size: 18px;
+        color: #d84b20;
+        text-transform: uppercase;
+        font-weight: 600;
+        text-shadow: 0 0 2px #d84b20;
+    }
+
+    input {
+        padding: 15px 15px;
+        margin-bottom: 25px;
+        background-color: #007fff;
+        color: white;
+        border: none;
+        width: 400px;
+    
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &::placeholder {
+            color: rgb(216, 216, 216);
+        }
+    }
+
+    textarea {
+        resize: none;
+        padding: 10px 10px;
+        background-color: #007fff;
+        color: white;
+        border: none;
+        margin-bottom: 25px;
+        width: 400px;
+
+        &::placeholder {
+            color: rgb(216, 216, 216);
+        }
+    }
+
+    select {
+        padding: 10px 10px;
+        background-color: #007fff;
+        color: white;
+        margin-bottom: 25px;
+        border: none;
+        width: 400px;
     }
 
     button {
         display: block;
         margin: 0 auto;
-        padding: 5px 10px;
+        padding: 10px 20px;
+        background-color: rgba($color: #00c41a, $alpha: 0.65);
+        cursor: pointer;
+        font-weight: 600;
+        border: 2px solid transparent;
+
+        &:hover {
+            background-color: rgba($color: #00c41a, $alpha: 1);
+            border: 2px solid black;
+            transition: all 250ms linear;
+        }
     }
 }
