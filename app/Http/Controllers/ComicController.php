@@ -14,8 +14,10 @@ class ComicController extends Controller
      */
     public function index()
     {
+        // Recupero dal database la tabella comics con metodo all
         $comics = Comic::all();
 
+        // Ritorno la vista comics index e passo comics come parametro 
         return view('comics.index', compact('comics'));
     }
 
@@ -26,6 +28,7 @@ class ComicController extends Controller
      */
     public function create()
     {
+        // Ritorno la vista comics create
         return view('comics.create');
     }
 
@@ -37,13 +40,19 @@ class ComicController extends Controller
      */
     public function store(Request $request)
     {
+       // Salvo la richiesta del form nella varibile data con metedo all 
        $data = $request->all();
 
+       // Creo un nuovo comic
        $comic = new Comic();
 
+       // Imposto i valori dei campi del database con i valori del form usando il metdodo fill
        $comic->fill($data);
+
+       // Salvo i dati
        $comic->save();
 
+       // Redirigo la rotta comics show, come parametro passo comic
        return redirect()->route('comics.show', $comic);
     }
 
@@ -55,6 +64,7 @@ class ComicController extends Controller
      */
     public function show(Comic $comic)
     {
+        // Ritorno la vista comics show e passo come parametro comic
         return view('comics.show', compact('comic'));
     }
 
@@ -66,6 +76,7 @@ class ComicController extends Controller
      */
     public function edit(Comic $comic)
     {
+        // Ritorno la vista comics edit e passo come parametro comic
         return view('comics.edit', compact('comic'));
     }
 
@@ -78,10 +89,13 @@ class ComicController extends Controller
      */
     public function update(Request $request, Comic $comic)
     {
+        // Recupero la richiesta del form nella varibile data con metedo all 
         $data = $request->all();
 
+        // Imposto i valori dei campi del database con i valori del form usando il metdodo update
         $comic->update($data);
 
+        // Redirigo la rotta a comics show passando come parametro comic
         return redirect()->route('comics.show', compact('comic'));
     }
 
@@ -93,8 +107,10 @@ class ComicController extends Controller
      */
     public function destroy(Comic $comic)
     {
+        // Usando il metodo delete, elimino il comic selezionato
         $comic->delete();
 
+        // Redirigo la rotta a comics index
         return redirect()->route('comics.index');
     }
 }
