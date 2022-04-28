@@ -107,6 +107,20 @@ class ComicController extends Controller
         // Recupero la richiesta del form nella varibile data con metedo all 
         $data = $request->all();
 
+        // Validazione dati
+        $request->validate([
+            'title' => 'required|min:5|max:255',
+            'description' => 'nullable',
+            'thumb' => 'required|url',
+            'price' => 'required|min:1|max:7',
+            'series' => 'required|min:5|max:100',
+            'sale_date' => 'required|date',
+            'type' => [
+                'required',
+                Rule::in(['comic book', 'graphic novel']),
+            ],
+        ]);
+
         // Imposto i valori dei campi del database con i valori del form usando il metdodo update
         $comic->update($data);
 
