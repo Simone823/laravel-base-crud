@@ -27,3 +27,22 @@ ol {
 main {
     padding: 30px 8px;
 }
+
+
+// Classe is-invalid validation form error
+.is-invalid {
+    border: 5px solid #cb2821;
+}
+
+.alert-danger {
+    color: #cb2821;
+    font-weight: 700;
+    font-size: 18px;
+    margin-top: 8px;
+
+    &::before {
+        content: '!!';
+        display: inline-block;
+        margin-right: 5px;
+    }
+}
