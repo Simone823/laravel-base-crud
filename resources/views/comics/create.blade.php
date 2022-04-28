@@ -95,16 +95,6 @@
         {{-- Submit --}}
         <button type="submit">Aggiungi</button>
 
-        {{-- If error validate form--}}
-        @if ($errors->any())
-            <div class="alert_message">
-                <ul>
-                    @foreach ($errors->all() as $error)
-                        <li>{{$error}}</li>
-                    @endforeach
-                </ul>
-            </div>
-         @endif
     </form>
 
 @endsection
