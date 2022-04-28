@@ -43,6 +43,16 @@ class ComicController extends Controller
        // Salvo la richiesta del form nella varibile data con metedo all 
        $data = $request->all();
 
+        // Validazione dati
+        $request->validate([
+            'title' => 'required|min:5|max:255',
+            'description' => 'nullable',
+            'thumb' => 'required|url',
+            'price' => 'required|min:1|max:7',
+            'series' => 'required|min:5|max:100',
+            'sale_date' => 'required|date',
+        ]);
+
        // Creo un nuovo comic
        $comic = new Comic();
 
