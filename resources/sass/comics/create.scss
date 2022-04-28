@@ -3,6 +3,16 @@ form {
     text-align: center;
     width: 100%;
 
+    .title,
+    .description,
+    .thumb,
+    .series,
+    .price,
+    .sale_date,
+    .type {
+        margin-bottom: 35px;
+    }
+
     label {
         display: block;
         margin-bottom: 8px;
@@ -15,7 +25,6 @@ form {
 
     input {
         padding: 15px 15px;
-        margin-bottom: 25px;
         background-color: #007fff;
         color: white;
         border: none;
@@ -36,7 +45,6 @@ form {
         background-color: #007fff;
         color: white;
         border: none;
-        margin-bottom: 25px;
         width: 400px;
 
         &::placeholder {
@@ -48,7 +56,6 @@ form {
         padding: 10px 10px;
         background-color: #007fff;
         color: white;
-        margin-bottom: 25px;
         border: none;
         width: 400px;
     }
