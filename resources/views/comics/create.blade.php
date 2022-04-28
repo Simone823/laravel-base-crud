@@ -80,10 +80,10 @@
         {{-- Type --}}
         <div class="type">
             <label for="type" id="type" name="type">Tipologia</label>
-            <select name="type" id="type">
+            <select name="type" class="@error('type') is-invalid @enderror" id="type">
                 <option value="" hidden>Seleziona una tipologia</option>
-                <option value="comic book">comic book</option>
-                <option value="graphic novel">graphic novel</option>
+                <option value="comic book" {{old('type') == 'comic book' ? 'selected' : ''}}>comic book</option>
+                <option value="graphic novel" {{old('type') == 'graphic novel' ? 'selected' : ''}}>graphic novel</option>
             </select>
 
             {{-- Error validation --}}
