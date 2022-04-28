@@ -84,6 +84,16 @@ form {
   width: 100%;
 }
 
+form .title,
+form .description,
+form .thumb,
+form .series,
+form .price,
+form .sale_date,
+form .type {
+  margin-bottom: 35px;
+}
+
 form label {
   display: block;
   margin-bottom: 8px;
@@ -96,7 +106,6 @@ form label {
 
 form input {
   padding: 15px 15px;
-  margin-bottom: 25px;
   background-color: #007fff;
   color: white;
   border: none;
@@ -125,7 +134,6 @@ form textarea {
   background-color: #007fff;
   color: white;
   border: none;
-  margin-bottom: 25px;
   width: 400px;
 }
 
@@ -145,7 +153,6 @@ form select {
   padding: 10px 10px;
   background-color: #007fff;
   color: white;
-  margin-bottom: 25px;
   border: none;
   width: 400px;
 }
@@ -183,5 +190,22 @@ ol {
 
 main {
   padding: 30px 8px;
+}
+
+.is-invalid {
+  border: 5px solid #cb2821;
+}
+
+.alert-danger {
+  color: #cb2821;
+  font-weight: 700;
+  font-size: 18px;
+  margin-top: 8px;
+}
+
+.alert-danger::before {
+  content: "!!";
+  display: inline-block;
+  margin-right: 5px;
 }
 
